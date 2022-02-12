@@ -4,6 +4,8 @@ Godot Plugin for a simple sprite editor
 This is my first plugin project. I'm not the best programmer so this is pretty sloppy code, but from testing it out, it does seem stable right now.
 I'm also very new to Github projects in general, so I doubt I'm doing this right. :P
 
+![Look at the GDPaint Editor](https://i.imgur.com/LPq3sPx.jpg)
+
 Installation:
 
 1. Unzip the GDPaint.zip file
@@ -50,6 +52,7 @@ Usage:
 - Grid Snapping
 - Image cropping and resizing
 - Saving and Loading as png files only
+- Color Palette
 
 ### Planned Features
 - Layer support
