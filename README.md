@@ -37,7 +37,7 @@ Usage:
 
 ### Navigation and Shortcuts
 - Hold space and move the mouse to pan the image
-- Scroll up and down to zoom in
+- Scroll up and down to zoom in and out
 - Ctrl+Z to undo paint
 - Ctrl+Shift+Z to redo paint
 - Hold Shift anytime to draw a line
@@ -59,5 +59,6 @@ Usage:
 - Shader support
 - Better organization of the editor
 - Better orginization of code
-- Possible drag and drop support
+- Better undo/redo 
+- Possible file drag and drop support 
 
