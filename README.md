@@ -1,7 +1,9 @@
 # GDPaint
-Godot Plugin for a simple sprite editor
+A Sprite Editing tool for Godot
 
-![Look at the GDPaint Editor](https://i.imgur.com/LPq3sPx.jpg)
+<!-- ![Look at the GDPaint Editor](https://i.imgur.com/LPq3sPx.jpg) -->
+![program-screen](https://user-images.githubusercontent.com/54819319/182956410-08330231-8c59-4e4d-a64e-faf6e476003f.jpg)
+
 
 Installation:
 
@@ -11,10 +13,10 @@ Installation:
 
 Usage:
 - Open a StreamTexture in the inspector, and there will be a button to edit it in GDPaint.
-- The sprite editor is on the bottom panel, so it can just be clicked on as well.
+- The sprite editor is on the top panel, so it can just be clicked on as well.
 
 ***Note: It's important that your cursor is in the GDPaint Editor window when using keyboard commands, as it will consume input events only while the cursor is inside. 
-      If you try commands like Ctrl+z or Ctrl+x while the cursor is outside, it will trigger the respective commands of the Godot Editor, which could be problematic.***
+      If you try commands like Ctrl+z or Ctrl+x while the cursor is outside, it will trigger the respective commands of the Godot Editor.***
 
 ## Current features
 
@@ -52,13 +54,13 @@ Usage:
 - Color Palette
 
 ### Planned Features
-- Layer support
-- Animation frames support
-- Better selection tool, with handles and resizing
-- Tool specific options, like brush size and pixel perfect
-- Shader support
-- Better organization of the editor
-- Better orginization of code
-- Better undo/redo 
-- Possible file drag and drop support 
+- [x] Layer support (v2)
+- [x] Animation frames support (v2)
+- [x] Better selection tool, with handles and resizing (v2)
+- [x] Tool specific options, like brush size and pixel perfect (v2)
+- [ ] Shader support
+- [ ] Better organization of the editor
+- [ ] Better orginization of code
+- [ ] Better undo/redo 
+- [ ] Possible file drag and drop support 
 
