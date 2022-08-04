@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://addons/gd_paint/FoldingButton/FoldingButton.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+content_margin_left = 6.0
+content_margin_right = 4.0
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0.18, 0.207, 0.279, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id=2]
+content_margin_left = 4.0
+content_margin_right = 4.0
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0.2, 0.23, 0.31, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+anti_aliasing = false
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[node name="FoldingButton" type="VBoxContainer" groups=["FoldingButton"]]
+margin_right = 12.0
+margin_bottom = 20.0
+custom_constants/separation = 8
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 22.0
+mouse_filter = 1
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/normal = SubResource( 2 )
+align = 0
+__meta__ = {
+"_editor_description_": ""
+}
+
+[connection signal="mouse_exited" from="." to="." method="_on_FoldingButton_mouse_exited"]
+[connection signal="mouse_exited" from="Button" to="." method="_on_FoldingButton_mouse_exited"]
+[connection signal="pressed" from="Button" to="." method="_on_FoldingButton_pressed"]
+[connection signal="toggled" from="Button" to="." method="_on_FoldingButton_toggled"]

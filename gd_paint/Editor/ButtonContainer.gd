@@ -12,6 +12,8 @@ func _ready():
 
 
 func emit_tool(node):
+	for child in get_children():
+		child.pressed = child == node
 	emit_signal("tool_selected", node)
 
 

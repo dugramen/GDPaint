@@ -12,16 +12,21 @@ var palette := [
 	Color.blue, Color.purple, Color.violet
 ]
 
-#var plugin: EditorPlugin
-
-#func set_plugin(val):
-#	plugin = val
-#	begin()
 
 func _ready():
 	get_child(0).visible = false
-	for color in palette:
-		add_color(color)
+	set_palette()
+#	for color in palette:
+#		add_color(color)
+
+
+func set_palette(color_list := palette):
+	palette = color_list
+	for child in get_children():
+		if child != $PaletteColor:
+			child.queue_free()
+	for col in color_list:
+		add_color(col)
 
 
 func _on_ColorPickerButtonLeft_popup_closed():

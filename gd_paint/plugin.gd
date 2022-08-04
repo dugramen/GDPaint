@@ -11,9 +11,9 @@ var inspector_plugin
 func open_panel():
 	if main_panel_instance:
 		get_editor_interface().get_selection().clear()
-		make_bottom_panel_item_visible(main_panel_instance)
+#		make_bottom_panel_item_visible(main_panel_instance)
+		get_editor_interface().set_main_screen_editor("GDPaint")
 		pass
-#		get_editor_interface().set_main_screen_editor("GDPaint")
 
 
 func load_sprite_pressed(path):
@@ -26,8 +26,8 @@ func _enter_tree():
 	main_panel_instance = MainPanel.instance()
 	main_panel_instance.plugin = self
 	# Add the main panel to the editor's main viewport.
-#	get_editor_interface().get_editor_viewport().add_child(main_panel_instance)
-	add_control_to_bottom_panel(main_panel_instance, "GD Paint")
+	get_editor_interface().get_editor_viewport().add_child(main_panel_instance)
+#	add_control_to_bottom_panel(main_panel_instance, "GD Paint")
 	
 	
 	inspector_plugin = preload("res://addons/gd_paint/inspector_plugin.gd").new()
@@ -41,7 +41,7 @@ func _enter_tree():
 func _exit_tree():
 	remove_inspector_plugin(inspector_plugin)
 	if main_panel_instance:
-		remove_control_from_bottom_panel(main_panel_instance)
+#		remove_control_from_bottom_panel(main_panel_instance)
 		main_panel_instance.queue_free()          
 		
 
@@ -61,8 +61,8 @@ func _exit_tree():
 
 
 
-#func has_main_screen():
-#	return true
+func has_main_screen():
+	return true
 
 
 func make_visible(visible):
