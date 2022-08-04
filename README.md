@@ -1,5 +1,7 @@
 # GDPaint
-A Sprite Editing tool for Godot
+A Sprite Editing tool for Godot 
+
+(web demo available at https://dugtrioramen.itch.io/gd-paint-v2)
 
 <!-- ![Look at the GDPaint Editor](https://i.imgur.com/LPq3sPx.jpg) -->
 ![program-screen](https://user-images.githubusercontent.com/54819319/182956410-08330231-8c59-4e4d-a64e-faf6e476003f.jpg)
