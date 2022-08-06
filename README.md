@@ -22,7 +22,7 @@ Usage:
 
 ## Current features
 
-### Tools
+### Drawing Tools
 - Brush
 - Line
 - Rect & Rect_fill
@@ -36,9 +36,21 @@ Usage:
   - Ctrl + X to cut pixels in a selection
 - Stamp:
   - Paste any cut selection
-- Flip X & Flip Y (Mirroring)
 
-### Navigation and Shortcuts
+### Helpful Features
+- Layering & Animation support
+- Shortcut to open in GD Script from Godot's Texture inspector
+- Flip X & Flip Y (Mirroring)
+- Tiled Mode (for help with draing repeating/tiled textures)
+- Draw while animating (for easily making trail animations)
+- Circle, Square, and Line Brushes with custom size & rotation
+- Custom Grid Size
+- Grid Snapping
+- Image cropping and resizing with different quality options
+- Undo & Redo
+- Foldable and Rearrangeable UI (drag and drop)
+
+### Navigation and Keyboard Shortcuts
 - Hold space and move the mouse to pan the image
 - Scroll up and down to zoom in and out
 - Ctrl+Z to undo paint
@@ -47,13 +59,6 @@ Usage:
 - Hold Ctrl anytime to draw a rect
 - Hold Ctrl+Shift anytime to draw a filled rect
 - Hold Alt anytime to color pick
-
-### Other
-- Custom Grid size
-- Grid Snapping
-- Image cropping and resizing
-- Saving and Loading as png files only
-- Color Palette
 
 ### Planned Features
 - [x] Layer support (v2)
