@@ -38,16 +38,17 @@ Usage:
   - Paste any cut selection
 
 ### Helpful Features
-- Layering & Animation support
 - Shortcut to open in GD Script from Godot's Texture inspector
+- Undo & Redo
+- Layering & Animation support
+- Draw while animating (for easily making trail animations)
+- Pixel Perfect brush
+- Circle, Square, and Line Brushes with custom size & rotation
 - Flip X & Flip Y (Mirroring)
 - Tiled Mode (for help with draing repeating/tiled textures)
-- Draw while animating (for easily making trail animations)
-- Circle, Square, and Line Brushes with custom size & rotation
 - Custom Grid Size
 - Grid Snapping
 - Image cropping and resizing with different quality options
-- Undo & Redo
 - Foldable and Rearrangeable UI (drag and drop)
 
 ### Navigation and Keyboard Shortcuts
@@ -56,8 +57,8 @@ Usage:
 - Ctrl+Z to undo paint
 - Ctrl+Shift+Z to redo paint
 - Hold Shift anytime to draw a line
-- Hold Ctrl anytime to draw a rect
-- Hold Ctrl+Shift anytime to draw a filled rect
+- Hold Ctrl anytime to draw a rectangle
+- Hold Ctrl+Shift anytime to draw a filled rectangle
 - Hold Alt anytime to color pick
 
 ### Planned Features
