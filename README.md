@@ -70,5 +70,7 @@ Usage:
 - [ ] Better organization of the editor
 - [ ] Better orginization of code
 - [ ] Better undo/redo 
-- [ ] Possible file drag and drop support 
+- [ ] File drag and drop support 
+- [ ] Custom stamps with parameters
+- [ ] Replace button text with icons
 
